@@ -96,10 +96,10 @@ main() {
   readonly show_session="#[fg=$thm_green]}#[bg=$thm_gray]$right_separator#{?client_prefix,#[bg=$thm_red],#[bg=$thm_green]}#[fg=$thm_bg] #[fg=$thm_fg,bg=$thm_gray] #S "
 
   local show_directory_in_window_status
-  readonly show_directory_in_window_status="#[fg=$thm_bg,bg=$thm_blue] #I #[fg=$thm_fg,bg=$thm_gray] #{b:pane_current_path} "
+  readonly show_directory_in_window_status="#[fg=$thm_bg,bg=$thm_blue]#I#[fg=$thm_fg,bg=$thm_gray] #{b:pane_current_path} "
 
   local show_directory_in_window_status_current
-  readonly show_directory_in_window_status_current="#[fg=$thm_bg,bg=$thm_orange] #I #[fg=$thm_fg,bg=$thm_bg] #{b:pane_current_path} "
+  readonly show_directory_in_window_status_current="#[fg=$thm_bg,bg=$thm_orange]#I#[fg=$thm_fg,bg=$thm_bg] #{b:pane_current_path} "
 
   local show_window_in_window_status
   readonly show_window_in_window_status="#[fg=$thm_fg,bg=$thm_bg] #W #[fg=$thm_bg,bg=$thm_blue] #I#[fg=$thm_blue,bg=$thm_bg]$left_separator#[fg=$thm_fg,bg=$thm_bg,nobold,nounderscore,noitalics] "
@@ -114,7 +114,7 @@ main() {
   readonly show_host="#[fg=$thm_blue,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_blue]󰢩 #[fg=$thm_fg,bg=$thm_gray] #h "
 
   local show_date_time
-  readonly show_date_time="#[fg=$thm_blue,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_blue] $date_time "
+  readonly show_date_time="#[fg=$thm_blue,bg=$thm_gray]$right_separator#[fg=$thm_bg,bg=$thm_blue,bold] $date_time "
 
   # Right column 1 by default shows the Window name.
   local right_column1=$show_window
@@ -146,7 +146,7 @@ main() {
     right_column2=$right_column2$show_date_time
   fi
 
-  set status-left "hello"
+  set status-left ""
 
   set status-right "${right_column1},${right_column2}"
 
