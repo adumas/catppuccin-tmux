@@ -96,10 +96,10 @@ main() {
   readonly show_session="#[fg=$thm_green]}#[bg=$thm_gray]$right_separator#{?client_prefix,#[bg=$thm_red],#[bg=$thm_green]}#[fg=$thm_bg] #[fg=$thm_fg,bg=$thm_gray] #S "
   
   local powerline_window_number
-  readonly powerline_window_number="#[fg=$thm_bg,bg=$thm_blue]#I#[fg=$thm_blue,bg=$thm_gray]"
+  readonly powerline_window_number="#[fg=$thm_bg,bg=$thm_blue]#I#[fg=$thm_blue,bg=$thm_gray]"
   
   local powerline_window_number_current
-  readonly powerline_window_number_current="#[fg=$thm_bg,bg=$thm_orange]#I#[fg=$thm_orange,bg=$thm_gray]"
+  readonly powerline_window_number_current="#[fg=$thm_bg,bg=$thm_orange]#I#[fg=$thm_orange,bg=$thm_gray]"
   
   local show_directory_in_window_status
   readonly show_directory_in_window_status="$powerline_window_number#[fg=$thm_fg,bg=$thm_gray] #{b:pane_current_path} "
