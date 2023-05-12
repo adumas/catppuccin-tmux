@@ -105,7 +105,7 @@ main() {
   readonly show_directory_in_window_status="$powerline_window_number #[fg=$thm_fg,bg=$thm_gray]#{b:pane_current_path} "
 
   local show_directory_in_window_status_current
-  readonly show_directory_in_window_status_current="$powerline_window_number_current #{b:pane_current_path}#[fg=$thm_orange,bg=$thm_bg]"
+  readonly show_directory_in_window_status_current="$powerline_window_number_current #{b:pane_current_path}#[fg=$thm_orange,bg=$thm_gray]"
 
   local show_window_in_window_status
   readonly show_window_in_window_status="#[fg=$thm_fg,bg=$thm_bg] #W #[fg=$thm_bg,bg=$thm_blue] #I#[fg=$thm_blue,bg=$thm_bg]$left_separator#[fg=$thm_fg,bg=$thm_bg,nobold,nounderscore,noitalics] "
