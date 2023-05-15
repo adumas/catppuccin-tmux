@@ -99,7 +99,7 @@ main() {
   readonly powerline_window_number="#[fg=$thm_gray,bg=$thm_blue]#I#[fg=$thm_blue,bg=$thm_gray]"
 
   local powerline_window_number_current
-  readonly powerline_window_number_current="#[fg=$thm_gray,bg=$thm_magenta]#I#[bold]"
+  readonly powerline_window_number_current="#[fg=$thm_orange,bg=$thm_gray]#[bold]#I#[fg=$thm_gray,bg=$thm_orange]"
 
   local show_directory_in_window_status
   readonly show_directory_in_window_status="$powerline_window_number#[fg=$thm_fg,bg=$thm_gray]#{b:pane_current_path} "
